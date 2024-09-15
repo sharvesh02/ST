@@ -11,6 +11,6 @@ public String checkEligibility(int age)
 @Test
 	void test() {
 		vote v = new vote();
-	    assertEquals("Eligible for voting", v.checkEligibility(17));
+	    assertEquals("Eligible for voting", v.checkEligibility(19));
 	    assertEquals("Not eligible for voting", v.checkEligibility(17));
 	 }
