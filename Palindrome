@@ -1,0 +1,21 @@
+public String palin() {
+        String str = "radaa";
+        int left = 0;
+        int right = str.length() - 1;
+        while (left < right && str.charAt(left) == str.charAt(right)) {
+            left++;
+            right--;
+        }
+        if (left >= right) {
+            return("Palindrome");
+        } else {
+            return("Not Palindrome");
+        }
+       
+    }
+
+@Test
+	void test() {
+		Palindrome pa = new Palindrome();
+		assertEquals("Palindrome",pa.palin());
+	}
