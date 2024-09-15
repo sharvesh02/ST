@@ -1,0 +1,21 @@
+	public int[] YWD (int days) {
+		int[] val = new int[3];
+     val[0] = days / 365;
+	 val[1] = (days % 365) / 7;
+	  val[2] = (days % 365) % 7;
+    
+   return(val);
+}
+
+@Test
+	void test() {
+		int days = 1000;
+		YearsWeeksDays yy = new YearsWeeksDays();
+		int[] res = new int[3];
+		res[0]=2;
+	    res[1]=38;
+	    res[2]=4;
+	    assertArrayEquals(res, yy.YWD(days));
+		
+      
+	}
