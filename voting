@@ -1,0 +1,16 @@
+public String checkEligibility(int age)
+	{
+        if (age >= 18) {
+            return "Eligible for voting";
+        } 
+        else {
+            return "Not eligible for voting";
+        }
+	}
+
+@Test
+	void test() {
+		vote v = new vote();
+	    assertEquals("Eligible for voting", v.checkEligibility(17));
+	    assertEquals("Not eligible for voting", v.checkEligibility(17));
+	 }
