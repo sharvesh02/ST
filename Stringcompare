@@ -9,7 +9,7 @@ public String compareStrings(String str1, String str2) {
 
 @Test
 	void test() {
-		String str1 = "Helo";
+		String str1 = "Hello";
 	    String str2 = "Hello";
 	    Stringcompare comparer = new Stringcompare();
 	    assertEquals("Strings are equal.",comparer.compareStrings(str1, str2));
