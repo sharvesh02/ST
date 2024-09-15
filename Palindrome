@@ -1,5 +1,5 @@
 public String palin() {
-        String str = "radaa";
+        String str = "radar";
         int left = 0;
         int right = str.length() - 1;
         while (left < right && str.charAt(left) == str.charAt(right)) {
