@@ -5,5 +5,5 @@ public double calculateSimpleInterest(double principal, double rate, double time
 	@Test
 	void test() {
 		simpleintrest si = new simpleintrest();
-		assertEquals(201.0, si.calculateSimpleInterest(1000.0, 5.0, 4.0), 0.01);
+		assertEquals(200.0, si.calculateSimpleInterest(1000.0, 5.0, 4.0), 0.01);
 	}
