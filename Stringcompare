@@ -1,0 +1,16 @@
+public String compareStrings(String str1, String str2) {
+	       
+        if (str1.equals(str2)) {
+            return("Strings are equal.");
+        } else {
+            return("Strings are not equal.");
+        }
+    }
+
+@Test
+	void test() {
+		String str1 = "Helo";
+	    String str2 = "Hello";
+	    Stringcompare comparer = new Stringcompare();
+	    assertEquals("Strings are equal.",comparer.compareStrings(str1, str2));
+	}
