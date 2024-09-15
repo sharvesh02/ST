@@ -1,0 +1,17 @@
+public static String decimalToBinary(int decimal) {
+        return Integer.toBinaryString(decimal);
+    }
+
+    public static String decimalToOctal(int decimal) {
+        return Integer.toOctalString(decimal);
+	    }
+@Test
+void test() {
+		int decimal = 10;
+        String expectedBinary = "1010";
+        String actualBinary = NumberConverter.decimalToBinary(decimal);
+        assertEquals(expectedBinary, actualBinary);
+        String expectedOctal = "12";
+        String actualOctal = NumberConverter.decimalToOctal(decimal);
+        assertEquals(expectedOctal, actualOctal);
+}
