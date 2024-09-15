@@ -1,0 +1,14 @@
+public  int[] SC(int number) {
+        int[] val = new int[2];
+        val[0] = number * number;
+        val[1] = number * number * number;
+        return(val);
+}
+@Test
+	void test() {
+		int[] res = new int[2];
+		res[0]=4;
+	    res[1]=8;
+	    SquareCube s = new SquareCube();
+		assertArrayEquals(res,s.SC(2));   
+	}
